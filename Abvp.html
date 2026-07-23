@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.85">
+    
+    <!-- SEO Optimization Meta Tags -->
+    <title>ABVP Nidadavole Vibhag | Official Student Union</title>
+    <meta name="description" content="Official website of Akhil Bharatiya Vidyarthi Parishad (ABVP) Nidadavole Vibhag. Join the world's largest student union organization to serve student community.">
+    <meta name="keywords" content="nidadhavolu abvp, abvp nidadhavolu, abvp, student union nidadavolu, abvp nidadavole, abvp student movement">
+    <meta name="author" content="FIZONYX">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Tags for Social Media Sharing -->
+    <meta property="og:title" content="ABVP Nidadavole Vibhag">
+    <meta property="og:description" content="Join ABVP Nidadavole Vibhag - World's Largest Student Organization.">
+    <meta property="og:image" content="abvp-main-logo.png">
+    <meta property="og:type" content="website">
+
+    <!-- Google Search Console Verification Tag (Paste your code below) -->
+    <meta name="google-site-verification" content="YOUR_GOOGLE_VERIFICATION_CODE_HERE">
+
+    <style>
+        /* Global Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            background: radial-gradient(circle at center, #ffffff 40%, #ffe0b2 100%);
+            color: #212121;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+            /* Space given so sticky footer does not overlap main content */
+            padding-bottom: 45px; 
+        }
+
+        /* --- Clean Header Configuration --- */
+        .main-header {
+            background-color: #ffffff;
+            border-bottom: 3px solid #ef6c00;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-container {
+            max-width: 1300px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 12px 24px;
+        }
+
+        .logo-block {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+
+        .logo-img {
+            width: 55px;
+            height: 55px;
+            object-fit: contain;
+            margin-right: 12px;
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo-title {
+            font-size: 24px;
+            font-weight: 800;
+            color: #e65100;
+            letter-spacing: 1px;
+            line-height: 1.1;
+        }
+
+        .logo-subtitle {
+            font-size: 11px;
+            font-weight: 700;
+            color: #d84315;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* --- Hero Section: Side-by-Side Avatars with Center ABVP Text --- */
+        .hero-section {
+            max-width: 1300px;
+            margin: 30px auto;
+            padding: 0 15px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            width: 100%;
+        }
+
+        .hero-avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid #ffffff;
+            box-shadow: 0 6px 18px rgba(230, 81, 0, 0.25);
+            object-fit: cover;
+            background-color: #fff;
+            flex-shrink: 0;
+        }
+
+        .hero-center-text {
+            font-size: 55px;
+            font-weight: 900;
+            color: #e65100;
+            letter-spacing: -1px;
+            text-shadow: 0 4px 20px rgba(230, 81, 0, 0.15);
+            user-select: none;
+            text-align: center;
+            flex: 1;
+            padding: 0 10px;
+        }
+
+        @media (min-width: 768px) {
+            .hero-avatar {
+                width: 220px;
+                height: 220px;
+                border-width: 6px;
+            }
+            .hero-center-text {
+                font-size: 110px;
+            }
+        }
+
+        /* --- Main Layout Wrapper --- */
+        .content-wrapper {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 24px 40px 24px;
+            width: 100%;
+        }
+
+        .section-container {
+            text-align: center;
+            margin-bottom: 50px;
+            position: relative;
+        }
+
+        .section-title {
+            font-size: 32px;
+            font-weight: 800;
+            color: #111111;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+            letter-spacing: 0.5px;
+        }
+
+        .section-desc {
+            font-size: 15px;
+            color: #4e342e;
+            max-width: 650px;
+            margin: 0 auto 24px auto;
+            line-height: 1.6;
+            font-weight: 500;
+        }
+
+        /* --- Custom Curved Hot Buttons --- */
+        .btn-hot {
+            display: inline-block;
+            background: linear-gradient(180deg, #f57c00 0%, #e65100 100%);
+            color: #ffffff;
+            font-weight: 700;
+            text-decoration: none;
+            padding: 12px 36px;
+            border-radius: 30px;
+            font-size: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: none;
+            outline: none;
+            box-shadow: 0 4px 15px rgba(230, 81, 0, 0.4);
+            cursor: pointer;
+            transition: background 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
+            user-select: none;
+        }
+
+        .btn-hot:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(230, 81, 0, 0.5);
+        }
+
+        .btn-hot:active {
+            background: #111111 !important;
+            transform: translateY(0);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+        }
+
+        /* --- Horizontal Slider Styles --- */
+        .slider-wrapper {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            padding: 10px 0;
+        }
+
+        .activities-slider {
+            display: flex;
+            gap: 24px;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            padding-bottom: 15px;
+            scrollbar-width: none;
+        }
+
+        .activities-slider::-webkit-scrollbar {
+            display: none;
+        }
+
+        .activity-card {
+            flex: 0 0 300px;
+            background: #ffffff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border: 1px solid #ffe0b2;
+            transition: transform 0.2s ease;
+        }
+
+        .activity-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .activity-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            background-color: #f5f5f5;
+        }
+
+        .activity-content {
+            padding: 16px;
+        }
+
+        .activity-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #212121;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+
+        .slider-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(230, 81, 0, 0.9);
+            color: white;
+            border: none;
+            outline: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            z-index: 10;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .slider-btn:active {
+            background: #111111;
+        }
+
+        .slider-btn.left { left: 5px; }
+        .slider-btn.right { right: 5px; }
+
+        .loading-text {
+            text-align: center;
+            width: 100%;
+            font-weight: 600;
+            color: #757575;
+            padding: 20px;
+        }
+
+        /* --- Left-Aligned Contact Section --- */
+        .contact-box {
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: 16px;
+            padding: 24px;
+            border: 1px solid #ffcc80;
+            text-align: left;
+            max-width: 500px;
+            margin: 20px 0;
+            box-shadow: 0 4px 15px rgba(230, 81, 0, 0.05);
+        }
+
+        .contact-box .section-title {
+            text-align: left;
+            font-size: 24px;
+            margin-bottom: 16px;
+        }
+
+        .info-label {
+            font-size: 18px;
+            font-weight: 700;
+            color: #3e2723;
+            margin-bottom: 4px;
+        }
+
+        .info-value {
+            font-size: 22px;
+            font-weight: 800;
+            color: #d84315;
+            letter-spacing: 0.5px;
+        }
+
+        /* --- Pop-up Modal Form Overlay --- */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 2000;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.3s ease;
+            padding: 20px;
+        }
+
+        .modal-overlay.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .modal-card {
+            background: #ffffff;
+            width: 100%;
+            max-width: 450px;
+            border-radius: 24px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            max-height: 90vh;
+            overflow-y: auto;
+            transform: scale(0.9);
+            transition: transform 0.3s ease;
+        }
+
+        .modal-overlay.active .modal-card {
+            transform: scale(1);
+        }
+
+        .modal-card::-webkit-scrollbar {
+            width: 6px;
+        }
+        .modal-card::-webkit-scrollbar-thumb {
+            background-color: #ffb74d;
+            border-radius: 10px;
+        }
+
+        .modal-title {
+            font-size: 26px;
+            font-weight: 800;
+            color: #111111;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        .form-input, .form-select, .form-textarea {
+            width: 100%;
+            padding: 14px 18px;
+            border: 1px solid #e0e0e0;
+            background-color: #fafafa;
+            border-radius: 14px;
+            font-size: 15px;
+            outline: none;
+            color: #212121;
+            font-weight: 500;
+            transition: border-color 0.2s, background-color 0.2s;
+        }
+
+        .form-input:focus, .form-select:focus, .form-textarea:focus {
+            border-color: #e65100;
+            background-color: #ffffff;
+        }
+
+        .form-textarea {
+            height: 100px;
+            resize: none;
+        }
+
+        .btn-submit {
+            width: 100%;
+            background: linear-gradient(180deg, #37474f 0%, #212121 100%);
+            color: #ffffff;
+            font-weight: 700;
+            padding: 15px;
+            border-radius: 30px;
+            font-size: 16px;
+            text-transform: uppercase;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            margin-top: 10px;
+            transition: background 0.2s, transform 0.1s;
+        }
+
+        .btn-submit:hover {
+            background: linear-gradient(180deg, #455a64 0%, #111111 100%);
+        }
+
+        .btn-submit:active {
+            background: #000000 !important;
+            transform: scale(0.98);
+        }
+
+        .btn-close-modal {
+            display: block;
+            text-align: center;
+            margin-top: 15px;
+            color: #757575;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .btn-close-modal:hover {
+            color: #212121;
+        }
+
+        /* --- Toast Notification --- */
+        .toast-container {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0.8);
+            background: rgba(17, 17, 17, 0.95);
+            color: #ffffff;
+            padding: 16px 28px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+            z-index: 3000;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 15px;
+            font-weight: 700;
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(8px);
+        }
+
+        .toast-container.show {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+            pointer-events: auto;
+        }
+
+        .toast-icon {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        .toast-success .toast-icon {
+            background-color: #2e7d32;
+            color: #ffffff;
+        }
+
+        .toast-error .toast-icon {
+            background-color: #d32f2f;
+            color: #ffffff;
+        }
+
+        /* --- Footer Layout --- */
+        .main-footer {
+            background-color: #fff3e0;
+            border-top: 1px solid #ffe0b2;
+            padding: 20px 24px;
+            margin-top: auto;
+        }
+
+        .footer-container {
+            max-width: 1300px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .footer-link {
+            text-decoration: none;
+            color: #4e342e;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .footer-socials {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .social-title {
+            font-size: 13px;
+            font-weight: 700;
+            color: #4e342e;
+        }
+
+        .social-text-link {
+            color: #d84315;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        .social-text-link:hover {
+            color: #e65100;
+            text-decoration: underline;
+        }
+
+        .footer-copy {
+            font-size: 13px;
+            font-weight: 700;
+            color: #4e342e;
+        }
+
+        /* --- STICKY FLOATING BUTTON (BOTTOM-LEFT CORNER) --- */
+.sticky-powered-btn {
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    background: linear-gradient(180deg, #37474f 0%, #111111 100%);
+    color: #FFA500;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 800;
+    padding: 8px 16px;
+    border-radius: 20px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    z-index: 1500;
+    border: 1px solid rgba(255, 152, 0, 0.3);
+    transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+    user-select: none;
+}
+
+.sticky-powered-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+    color: #0000000;
+}
+
+.sticky-powered-btn:active {
+    background: #000000 !important;
+    transform: translateY(0);
+}
+
+
+        .sticky-powered-link {
+            color: #ff9800;
+            text-decoration: none;
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: color 0.2s;
+        }
+
+        .sticky-powered-link:hover {
+            color: #ffffff;
+        }
+
+        @media (max-width: 768px) {
+            .header-container { flex-direction: column; }
+            .footer-container { flex-direction: column; text-align: center; }
+            .contact-box { max-width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Simplified Layout Top Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="#" class="logo-block">
+                <img src="https://i.postimg.cc/1zh8jZjb/f-Lc-t0PU.jpg" alt="ABVP Logo" class="logo-img">
+                <div class="logo-text">
+                    <span class="logo-title">ABVP</span>
+                    <span class="logo-subtitle">- Nidadavole Vibhag</span>
+                </div>
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <img src="https://i.postimg.cc/7YwXjpp6/SV-bfd932c2c4.jpg" alt="Swami Vivekananda - ABVP Nidadavole" class="hero-avatar">
+        <div class="hero-center-text">ABVP</div>
+        <img src="https://i.postimg.cc/ZKs3j2mc/Screenshot-20260713-203211.png" alt="Alluri Sitaramaraju - ABVP Nidadavole" class="hero-avatar">
+    </section>
+
+    <!-- Main Content Area -->
+    <main class="content-wrapper">
+
+        <!-- 1. Recent Activities & Programs Slider -->
+        <section class="section-container" style="text-align: left;">
+            <h2 class="section-title" style="text-align: center; margin-bottom: 30px;">Recent Activities & Programs</h2>
+            <div class="slider-wrapper">
+                <button class="slider-btn left" onclick="scrollSlider(-320)">&#10094;</button>
+                <div class="activities-slider" id="activitySlider">
+                    <div class="loading-text" id="loadingIndicator">Loading activities from sheets...</div>
+                </div>
+                <button class="slider-btn right" onclick="scrollSlider(320)">&#10095;</button>
+            </div>
+        </section>
+
+        <!-- 2. Join Section -->
+        <section class="section-container">
+            <h2 class="section-title">Join ABVP Nidadavole</h2>
+            <p class="section-desc">Become a part of the world's largest student organization and contribute to building a better student community in Nidadhavolu.</p>
+            <button class="btn-hot" onclick="openModal('membershipModal')">Join Now</button>
+        </section>
+
+        <!-- 3. Complaints & Feedback Section -->
+        <section class="section-container">
+            <h2 class="section-title">file your Complaints</h2>
+            <p class="section-desc">Have issues in your college, Drop your complaint directly here. we take imidiat action</p>
+            <button class="btn-hot" onclick="openModal('complaintModal')">file now</button>
+        </section>
+
+        <!-- 4. Contact Us Section -->
+        <section class="contact-box">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="info-label">Vibhag Convener:</div>
+            <div class="info-value" style="margin-bottom: 12px;">GUDLA MOKSHESWAR</div>
+            <div class="info-label">Helpline Number:</div>
+            <div class="info-value">9676997515</div>
+        </section>
+
+    </main>
+
+    <!-- MEMBERSHIP POP-UP MODAL FORM -->
+    <div class="modal-overlay" id="membershipModal">
+        <div class="modal-card">
+            <h3 class="modal-title">Membership Form</h3>
+            <form id="membershipForm">
+                <div class="form-group">
+                    <input type="text" name="name" class="form-input" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" name="phone" class="form-input" placeholder="Phone Number" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" class="form-input" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <select name="gender" class="form-select" required>
+                        <option value="" disabled selected>Select Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="address" class="form-input" placeholder="Address" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="college" class="form-input" placeholder="College Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="course" class="form-input" placeholder="Course Name" required>
+                </div>
+                <button type="submit" class="btn-submit">Submit</button>
+                <span class="btn-close-modal" onclick="closeModal('membershipModal')">Close</span>
+            </form>
+        </div>
+    </div>
+
+    <!-- COMPLAINT POP-UP MODAL FORM -->
+    <div class="modal-overlay" id="complaintModal">
+        <div class="modal-card">
+            <h3 class="modal-title">File Your Complaint</h3>
+            <form id="complaintForm">
+                <div class="form-group">
+                    <input type="text" name="name" class="form-input" placeholder="Name" required>
+                </div>
+                <div class="form-group">
+                    <select name="gender" class="form-select" required>
+                        <option value="" disabled selected>Select Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <input type="tel" name="phone" class="form-input" placeholder="Phone" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="address" class="form-input" placeholder="Address" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="problem" class="form-textarea" placeholder="Describe your problem" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Submit Complaint</button>
+                <span class="btn-close-modal" onclick="closeModal('complaintModal')">Close</span>
+            </form>
+        </div>
+    </div>
+
+    <!-- Center Custom Toast Notification Markup -->
+    <div class="toast-container" id="toastNotification">
+        <div class="toast-icon" id="toastIcon">&#10003;</div>
+        <span id="toastMessage">Successfully Submitted!</span>
+    </div>
+
+    <!-- Corporate Footer Section -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="#" class="footer-link">Contact Info</a>
+                <a href="#" class="footer-link">Privacy Policy</a>
+            </div>
+            <div class="footer-socials">
+                <span class="social-title">Follow Us on Social Media:</span>
+                <a href="https://instagram.com/your_profile" target="_blank" class="social-text-link">@abvp nidadavolu</a>
+            </div>
+            <div class="footer-copy">&copy; 2026 ABVP NIDADAVOLE VIBHAG</div>
+        </div>
+    </footer>
+  <div>
+    <!-- FLOATING BOTTOM-LEFT BUTTON -->
+<a href="https://fizonyx.netlify.app" target="_blank" class="sticky-powered-btn">
+    Powered by FIZONYX
+</a>
+
+       
+    </div>
+
+    <!-- Native Engine Logic -->
+    <script>
+        // Apps Script Endpoints
+        const MEMBERSHIP_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwK6DEfQxc-Pc-_Z9c91NYXoPIJZHYleURMb7lbjIIM8h_SE1ufot_fuegcOASVMoyf5A/exec";
+        const COMPLAINT_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyEmdfnYgx4Tv9Vxl--ma79TQdgcj7GXrEDRetXdV88wozRpuBqU09u5sdihlVgpmTXhg/exec";
+        const EVENTS_FETCH_URL = "https://script.google.com/macros/s/AKfycbz0wF1SU0fAB5jyooulJok9_JH4sC3YL4iZoJ_NtdOcwJ0wVwlYZs79-UeSnz5lncZQ/exec";
+
+        function scrollSlider(amount) {
+            document.getElementById('activitySlider').scrollBy({ left: amount, behavior: 'smooth' });
+        }
+
+        function openModal(id) {
+            document.getElementById(id).classList.add('active');
+        }
+
+        function closeModal(id) {
+            document.getElementById(id).classList.remove('active');
+        }
+
+        // Custom High-Performance Toast Notification System
+        function showToast(message, isSuccess = true) {
+            const toast = document.getElementById('toastNotification');
+            const toastIcon = document.getElementById('toastIcon');
+            const toastMessage = document.getElementById('toastMessage');
+
+            toastMessage.innerText = message;
+
+            if (isSuccess) {
+                toast.className = "toast-container toast-success show";
+                toastIcon.innerHTML = "&#10003;";
+            } else {
+                toast.className = "toast-container toast-error show";
+                toastIcon.innerHTML = "&#10007;";
+            }
+
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 3000);
+        }
+
+        // Dynamic Sheet Event Pipeline Engine
+        window.addEventListener('DOMContentLoaded', function() {
+            const slider = document.getElementById('activitySlider');
+            const loader = document.getElementById('loadingIndicator');
+
+            fetch(EVENTS_FETCH_URL)
+                .then(response => response.json())
+                .then(data => {
+                    if (!data || data.length === 0) {
+                        loader.innerText = "No recent events posted yet.";
+                        return;
+                    }
+                    loader.remove();
+                    
+                    data.forEach(event => {
+                        const card = document.createElement('div');
+                        card.className = 'activity-card';
+                        card.innerHTML = `
+                            <img src="${event.image}" alt="ABVP Nidadavole Event" class="activity-img" onerror="this.src='abvp-main-logo.png'">
+                            <div class="activity-content">
+                                <h3 class="activity-title">${event.text}</h3>
+                            </div>
+                        `;
+                        slider.appendChild(card);
+                    });
+                })
+                .catch(err => {
+                    console.error("Dynamic Registry Loading Interrupted: ", err);
+                    loader.innerText = "Failed to fetch activities registry from sheets backend.";
+                });
+        });
+
+        // Atomic Asynchronous Submission - Membership Pipeline
+        document.getElementById('membershipForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const submitBtn = this.querySelector('.btn-submit');
+            submitBtn.innerText = "Processing...";
+            submitBtn.disabled = true;
+
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData.entries());
+
+            fetch(MEMBERSHIP_SCRIPT_URL, {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data)
+            }).then(() => {
+                showToast("Successfully Submitted!", true);
+                this.reset();
+                closeModal('membershipModal');
+            }).catch(err => {
+                console.error(err);
+                showToast("Not Submitted! Please Try Again.", false);
+            }).finally(() => {
+                submitBtn.innerText = "Submit";
+                submitBtn.disabled = false;
+            });
+        });
+
+        // Atomic Asynchronous Submission - Complaint Pipeline
+        document.getElementById('complaintForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const submitBtn = this.querySelector('.btn-submit');
+            submitBtn.innerText = "Submitting...";
+            submitBtn.disabled = true;
+
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData.entries());
+
+            fetch(COMPLAINT_SCRIPT_URL, {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data)
+            }).then(() => {
+                showToast("Successfully Submitted!", true);
+                this.reset();
+                closeModal('complaintModal');
+            }).catch(err => {
+                console.error(err);
+                showToast("Not Submitted! Please Try Again.", false);
+            }).finally(() => {
+                submitBtn.innerText = "Submit Complaint";
+                submitBtn.disabled = false;
+            });
+        });
+    </script>
+</body>
+</html>
